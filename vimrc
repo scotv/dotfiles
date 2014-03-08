@@ -6,3 +6,6 @@ execute pathogen#infect()
 
 let g:EasyMotion_leader_key = '<Leader>'
 let mapleader = ","
+
+inoremap jk <esc>
+inoremap <esc> <NOP>

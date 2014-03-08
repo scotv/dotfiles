@@ -14,3 +14,6 @@ All of files in `~/dotfiles` have no dot notation.
 ## List
 The collection contains:
 * vimrc
+
+## References
+[Using Git and Github to Manage Your Dotfiles](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/) by _Michael Smalley_
