@@ -9,3 +9,5 @@ let mapleader = ","
 
 inoremap jk <esc>
 inoremap <esc> <NOP>
+
+set nu
