@@ -3,8 +3,13 @@
 This is a management collection of dotfiles in Linux.
 
 All of files in `~/dotfiles` have no dot notation.
+## Before vimrc
+Install `pathogen.vim` before using vimrc.
 
-## Usage
+And here is list of bundles managed by `pathogen.vim`:
+* vim-easymotion
+
+## Initialize the environment of dotfiles 
 
     git clone
     cd ~/dotfiles
@@ -12,7 +17,8 @@ All of files in `~/dotfiles` have no dot notation.
     ./init.sh
 
 ## List
-The collection contains:
+The dotfiles contain:
+* bashrc
 * vimrc
 
 ## References
