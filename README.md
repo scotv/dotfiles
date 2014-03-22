@@ -20,6 +20,8 @@ And here is list of bundles managed by `pathogen.vim`:
 The dotfiles contain:
 * bashrc
 * vimrc
+* vim (directory)
 
 ## References
 [Using Git and Github to Manage Your Dotfiles](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/) by _Michael Smalley_
+[Text Editor for Scala](http://stackoverflow.com/questions/3626203/text-editor-for-scala) on Stackoverflow.com

@@ -11,3 +11,12 @@ inoremap jk <esc>
 inoremap <esc> <NOP>
 
 set nu
+
+"region Syntax and Indent
+syntax on		" turn on syntax highlight
+set showmatch
+filetype indent on
+filetype on
+set autoindent
+set si			" smart indent
+"endregion
