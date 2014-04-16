@@ -20,3 +20,17 @@ filetype on
 set autoindent
 set si			" smart indent
 "endregion
+
+"region Surround
+nmap <space>' ciw'<c-r>"'<esc>
+vmap <space>' c'<c-r>"'<esc>
+
+nmap <space>" ciw"<c-r>""<esc>
+vmap <space>" c"<c-r>""<esc>
+
+nmap <space>( ciw(<c-r>")<esc>
+vmap <space>( c(<c-r>")<esc>
+
+nmap <space>[ ciw[<c-r>"]<esc>
+vmap <space>[ c[<c-r>"]<esc>
+"endregion
