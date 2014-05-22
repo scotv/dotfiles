@@ -27,3 +27,5 @@ The dotfiles contain:
 * [Text Editor for Scala](http://stackoverflow.com/questions/3626203/text-editor-for-scala) on Stackoverflow.com
 * [Enclose word in tag](http://stackoverflow.com/a/10306845) on Stackoverflow.com
 * [Altering SBT Repository](http://freewind.me/blog/20140509/2619.html) by _freewind_
+* [Show Current Git Branch in PS1](https://coderwall.com/p/fz0e0g) by _Robert Hennig_
+* [Special Characters in Bash](http://www.tldp.org/LDP/abs/html/special-chars.html) on tldp.org
