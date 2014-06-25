@@ -34,3 +34,7 @@ vmap <space>( c(<c-r>")<esc>
 nmap <space>[ ciw[<c-r>"]<esc>
 vmap <space>[ c[<c-r>"]<esc>
 "endregion
+
+set list
+" Show $ at end of line and trailing space as ~
+set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
