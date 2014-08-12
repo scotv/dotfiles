@@ -19,6 +19,7 @@ And here is list of bundles managed by `pathogen.vim`:
 ## List
 The dotfiles contain:
 * bashrc
+* gitconfig
 * vimrc
 * vim (directory)
 
