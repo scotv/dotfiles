@@ -4,3 +4,6 @@
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	k = log --pretty=oneline -n 20 --graph --abbrev-commit
+[user]
+	email = scotv@yandex.com
+	name = scott@lubuntu

@@ -30,4 +30,4 @@ The dotfiles contain:
 * [Show Current Git Branch in PS1](https://coderwall.com/p/fz0e0g) by _Robert Hennig_
 * [Special Characters in Bash](http://www.tldp.org/LDP/abs/html/special-chars.html) on tldp.org
 * [Show Current Git Status in PS1](http://www.bramschoenmakers.nl/en/node/624) on bramschoenmakers.nl
-
+* [Replace `gitk` with `git k`](https://github.com/xujihui1985/dotfiles/commit/75a1c5ed272db525e9b504a6a4826b3f1fcf5e7a#diff-4723a3b40361325f6612c40749b696d9) from xujihui1985/dotfiles
