@@ -9,7 +9,7 @@
 dir=~/dotfiles				# dotfiles directory
 olddir=~/dotfiles.d			# old dotfiles backup directory
 # list of files/folders to symlink in homedir
-files="bashrc vim vimrc"
+files="bashrc gitconfig vim vimrc"
 ##########
 
 # create dotfiles_old in homedir
@@ -26,11 +26,15 @@ echo "...done"
 # DO ignore the link file created before
 for file in $files; do
     if ([ ! -L ~/.$file ]) && 
-	([ -f ~/.$file ] || [ -d ~/.$file ]); then
+	([ -f ~/.$file ] || [ -d ~/.$file ]); 
+    then
         echo "Moving ~/.$file to $olddir/"
         mv ~/.$file $olddir/
+
+	echo "Creating symlink named .$file in ~ directory to $dir/$file."
+	ln -s $dir/$file ~/.$file
+    else
+	echo "Skipped the existed file (.$file) created before"
     fi
     
-    echo "Creating symlink named .$file in ~ directory to $dir/$file."
-    ln -s $dir/$file ~/.$file
 done
