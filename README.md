@@ -22,6 +22,7 @@ The dotfiles contain:
 * gitconfig
 * vimrc
 * vim (directory)
+* [vim-latex](http://vim-latex.sourceforge.net)
 
 ## References
 * [Using Git and Github to Manage Your Dotfiles](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/) by _Michael Smalley_
