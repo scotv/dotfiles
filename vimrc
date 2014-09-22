@@ -38,3 +38,8 @@ vmap <space>[ c[<c-r>"]<esc>
 set list
 " Show $ at end of line and trailing space as ~
 set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
+
+set noexpandtab
+set sw=4
+set tabstop=4
+set softtabstop=4
