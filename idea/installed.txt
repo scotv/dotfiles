@@ -1,0 +1,8 @@
+com.intellij
+mobi.hsz.idea.gitignore
+Mongo Plugin
+AngularJS
+com.intellij.plugins.webcomponents
+mobi.hsz.idea.latex
+net.nicoulaj.idea.markdown
+org.intellij.scala
