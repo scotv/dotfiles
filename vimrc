@@ -17,8 +17,13 @@ syntax on		" turn on syntax highlight
 set showmatch
 filetype indent on
 filetype on
-set autoindent
-set si			" smart indent
+" set autoindent
+" set si			" smart indent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set softtabstop=2
+set smarttab
 "endregion
 
 "region Surround
@@ -38,8 +43,3 @@ vmap <space>[ c[<c-r>"]<esc>
 set list
 " Show $ at end of line and trailing space as ~
 set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
-
-set noexpandtab
-set sw=4
-set tabstop=4
-set softtabstop=4
