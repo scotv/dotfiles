@@ -1,5 +1,15 @@
+## vim
 vim/.*
 vim/autoload
 vim/bundle
 
+## atom.io
+.apm
+packages
+storage
+compile-cache
+.node-gyp
+
+## else
 *.d
+.*

@@ -1,0 +1,22 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    projectHome: "/home/scotv/repo"
+    ignoredNames: [
+      ".aux"
+      ".bbl"
+      ".blg"
+      ".ilg"
+      ".ind"
+      ".idx"
+    ]
+  editor:
+    invisibles: {}
+    tabType: "soft"
+    tabLength: 3
+  "tree-view": {}
