@@ -6,10 +6,10 @@
 
 ########## Variables
 
-dir=~/dotfiles				# dotfiles directory
-olddir=~/dotfiles.d			# old dotfiles backup directory
+dir=~/repo/dotfiles			# dotfiles directory
+olddir=~/repo/dotfiles.d		# old dotfiles backup directory
 # list of files/folders to symlink in homedir
-files="bashrc gitconfig vim vimrc"
+files="bashrc gitconfig vim vimrc atom"
 ##########
 
 # create dotfiles_old in homedir
@@ -22,19 +22,31 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles.d directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles.d directory, then create symlinks
 # DO ignore the link file created before
 for file in $files; do
-    if ([ ! -L ~/.$file ]) && 
-	([ -f ~/.$file ] || [ -d ~/.$file ]); 
-    then
-        echo "Moving ~/.$file to $olddir/"
-        mv ~/.$file $olddir/
+  touch ~/.$file
+  if ([ ! -L ~/.$file ]) &&
+    ([ -f ~/.$file ] || [ -d ~/.$file ]);
+  then
+    echo "Backuping ~/.$file to $olddir/"
+    cp -ru ~/.$file $olddir/
+    echo "Moving ~/.$file to $dir/"
+    mv ~/.$file $dir/$file
+    echo "Creating symlink named .$file in ~ directory to $dir/$file"
+    ln -s $dir/$file ~/.$file
+  else
+    echo "Skipped the existed file (.$file) created before"
+  fi
+done
 
-	echo "Creating symlink named .$file in ~ directory to $dir/$file."
-	ln -s $dir/$file ~/.$file
-    else
-	echo "Skipped the existed file (.$file) created before"
-    fi
-    
+cd ~
+###############apply shell script files
+for file in $dir/sh/*.sh; do
+    sh_file="${file##*/}"
+    if ([ ! -L ~/$sh_file ]);
+    then
+        echo "Creating symlink named $sh_file in ~ directory to $dir/sh/$sh_file"
+        ln -s $dir/sh/$sh_file ~/$sh_file
+     fi
 done
