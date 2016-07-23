@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 
-# wget -qO- https://raw.githubusercontent.com/scozv/dotfiles/master/os/ubuntu-desktop.sh | bash
+# wget -qO- https://raw.githubusercontent.com/scozv/dotfiles/master/os/ubuntu-server.sh | bash
 
 {
   df_echo() {
-      echo
-      echo "### $1"
-      echo
+    echo
+    echo "### $1"
+    echo
+  }
+
+  df_run_script() {
+    . ~/opt/.df/dotfiles-master/os/src/$1
   }
 
   df_echo "download the environment scripts"
@@ -17,23 +21,24 @@
   DF_OS_PATH="~/opt/.df/dotfiles-master/os/src"
 
   df_echo "define temporary functions"
-  . $DF_OS_PATH/00_define_functions.sh
+  df_run_script 00_define_functions.sh
 
   df_echo "apt sources"
-  . $DF_OS_PATH/03_apt_sources.sh
+  df_run_script 03_apt_sources.sh
   df_echo "system configure"
-  . $DF_OS_PATH/05_system_config.sh
+  df_run_script 05_system_config.sh
 
   df_echo "install the packages"
-  . $DF_OS_PATH/10/wget_curl.sh
-  . $DF_OS_PATH/10/7z_unzip.sh
-  . $DF_OS_PATH/10/jdk_scala.sh
-  . $DF_OS_PATH/10/mongo-3.sh
-  . $DF_OS_PATH/10/nodejs-5.sh
-  . $DF_OS_PATH/10/ruby.sh
-  . $DF_OS_PATH/10/vim.sh
+  df_run_script 10/wget_curl.sh
+  df_run_script 10/7z_unzip.sh
+  df_run_script 10/jdk_scala.sh
+  df_run_script 10/mongo-3.sh
+  df_run_script 10/nodejs-5.sh
+  df_run_script 10/ruby.sh
+  df_run_script 10/vim.sh
 
   df_echo "unset and clear"
-  . $DF_OS_PATH/99_unset.sh
-  unset DF_OS_PATH
+  df_run_script 99_unset.sh
+  unset df_echo
+  unset df_run_script
 }
