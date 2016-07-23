@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# wget -qO- https://raw.githubusercontent.com/scozv/dotfiles/master/os/ubuntu-desktop.sh | bash
+
 {
   df_echo() {
       echo
@@ -12,7 +14,7 @@
   wget -O ~/opt/.df/dotfiles.tar.gz https://github.com/scozv/dotfiles/archive/master.tar.gz
   tar -xf ~/opt/.df/dotfiles.tar.gz -C ~/opt/.df/
 
-  DF_OS_PATH="~/opt/.df/dotfiles-master/os"
+  DF_OS_PATH="~/opt/.df/dotfiles-master/os/src"
 
   df_echo "define temporary functions"
   . $DF_OS_PATH/00_define_functions.sh
