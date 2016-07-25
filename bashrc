@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="\[\033[1;36m\]\u@\h [\[\033[32m\]\w]\[\033[0m\]\$(__git_ps1) \n\[\033[32m\]$ \[\033[0m\]"
-
-export PATH=$PATH:~/opt/activator-1.2.12
+# Exports definitions.
+if [ -f ~/.bash_exports ]; then
+    . ~/.bash_exports
+fi
