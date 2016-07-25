@@ -1,11 +1,15 @@
 # .files in Lubuntu
 
-This is a management collection of dotfiles in Lubuntu.
+This is a management collection of `dotfiles` in Lubuntu.
+
+Read my post on `dotfiles` ([Link](https://scozv.github.io/blog/pattern/2016/07/22/donot-ask-the-devs-to-prepare-env-by-click)).
 
 All of files in `~/dotfiles` have no dot notation.
 
 这个项目托管了Lubuntu下面的很多配置文件，
 通常这些配置文件（夹）都以点号`.`作为前缀。
+
+我在一篇文章中专门提到了`dotfiles`（[链接](https://scozv.github.io/blog/zh/pattern/2016/07/22/donot-ask-the-devs-to-prepare-env-by-click)） 。
 
 在项目中，所有的文件都去掉点号，我们通过文件链接的方式（参考`init.sh`）做关联。
 
@@ -29,11 +33,11 @@ The dotfiles contain:
 
 File or folder 文件（夹） | Description 简介
 :-----------------------------------------|:--------------------------
-bashrc | Bash configuration 天天用，必备设置 
+bashrc | Bash configuration 天天用，必备设置
 gitconfig | Git global setting 配置了一些常用Git命令
-vimrc | 
-*vim/* | 
- *atom/* | 
+vimrc |
+*vim/* |
+ *atom/* |
 
 ## References
 * [Using Git and Github to Manage Your Dotfiles](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/) by _Michael Smalley_
