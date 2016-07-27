@@ -9,5 +9,11 @@ df_unset_all() {
   unset df_bail
   unset df_exec_cmd_nobail
   unset df_exec_cmd
+  unset df_exist
+  unset df_exist_folder
+  unset df_exist_always
+  unset df_exist_never
+  unset df_exist_command
 }
 df_unset_all
+unset df_unset_all

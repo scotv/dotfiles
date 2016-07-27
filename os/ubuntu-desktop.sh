@@ -22,6 +22,7 @@
 
   df_echo "define temporary functions"
   df_run_script 00_define_functions.sh
+  df_run_script 00_existance_validation.sh
 
   df_echo "apt sources"
   df_run_script 03_apt_sources.sh
@@ -47,6 +48,7 @@
   df_run_script 10/jetbrains-web.sh
 
   df_echo "unset and clear"
+  df_run_script 99_existance_report.sh
   df_run_script 99_unset.sh
   unset df_echo
   unset df_run_script
