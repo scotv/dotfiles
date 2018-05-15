@@ -15,7 +15,8 @@
 
   df_echo "download the environment scripts"
   mkdir -p ~/opt/.df
-  curl -o ~/opt/.df/dotfiles.zip https://github.com/scozv/dotfiles/archive/feature/macOS.zip
+  # https://stackoverflow.com/a/16261265/3809076
+  curl -o ~/opt/.df/dotfiles.zip -LOk https://github.com/scozv/dotfiles/archive/feature/macOS.zip
   # https://apple.stackexchange.com/a/43119
   unzip ~/opt/.df/dotfiles.zip -d ~/opt/.df/
 
