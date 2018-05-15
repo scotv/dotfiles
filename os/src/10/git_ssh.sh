@@ -1,5 +1,5 @@
 df_echo "Install Git tool"
-df_apt_install git gitg git-flow gitstats
+df_apt_install git gitg git-flow bash-completion
 
 df_echo "Generate the SSH key"
 # ssh-keygen -t rsa -b 4096

@@ -1,11 +1,12 @@
 df_exist_command ruby || {
   df_echo "Install Ruby"
-  # alternative way https://gorails.com/setup/ubuntu/15.04
-  df_apt_install ruby-full libxml2-dev libxslt-dev
-  df_exec_cmd "sudo gem update"
-  df_exec_cmd_nobail "sudo gem update --system"
-  df_exec_cmd "sudo gem install bundler"
-  # bundle config mirror.https://rubygems.org https://ruby.taobao.org
-  # fix zlib.h not found error
-  df_apt_install zlib1g-dev
+  df_apt_install rbenv
+  rbenv init
+  # RUBY_CONFIGURE_OPTS=--with-openssl-dir=/usr/local/Cellar/openssl/1.0.2l/ \
+     rbenv install 2.4.0
+  rbenv rehash
+  rbenv global 2.4.0
+  . ~/.bashrc
+  ruby -v
+  gem update
 }

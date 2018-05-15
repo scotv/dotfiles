@@ -28,7 +28,7 @@ df_apt_install() {
   pkg_list="$@"
   df_echo "Will install in quiet: $pkg_list"
 
-  df_apt_exec "install $pkg_list"
+  df_apt_exec reinstall $pkg_list
 }
 
 df_apt_ppa() {
