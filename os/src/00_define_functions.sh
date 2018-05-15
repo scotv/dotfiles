@@ -20,15 +20,7 @@ df_exec_cmd() {
 }
 
 df_apt_exec() {
-  # http://ask.xmodulo.com/find-ubuntu-version-codename-shell-script.html
-  # sudo apt[-get] -y $1
-
-  if [[ `lsb_release --release | cut -f2` > "15.10" ]]; then
-    echo "`lsb_release --release | cut -f2` apt $1"
-    sudo apt -y $1
-  else
-    sudo apt-get -y $1
-  fi
+  brew
 }
 
 df_apt_install() {
@@ -63,3 +55,11 @@ df_apt_upgrade() {
   df_apt_update
   df_apt_exec upgrade
 }
+
+def_apt_init() {
+  df_echo "install brew and enable the caskroom"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew tap caskroom/cask
+}
+
+def_apt_init
