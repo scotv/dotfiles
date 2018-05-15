@@ -35,7 +35,7 @@
   df_run_script 10/wget_curl.sh
   df_run_script 10/7z_unzip.sh
   df_run_script 10/jdk_scala.sh
-  df_run_script 10/mongo-3.sh
+  # df_run_script 10/mongo-3.sh
   df_run_script 10/nodejs-5.sh
   df_run_script 10/ruby.sh
   df_run_script 10/vim.sh
@@ -43,11 +43,12 @@
   df_echo "install the packages (only in ubuntu-desktop.sh)"
   df_run_script 10/git_ssh.sh
   df_run_script 10/atom.sh
-  df_run_script 10/chromium.sh
+  # df_run_script 10/chromium.sh
   df_run_script 10/tex.sh
-  df_run_script 10/activator.sh
-  df_run_script 10/jetbrains-idea.sh
-  df_run_script 10/jetbrains-web.sh
+  df_run_script 10/virtualbox.sh
+  # df_run_script 10/activator.sh
+  # df_run_script 10/jetbrains-idea.sh
+  # df_run_script 10/jetbrains-web.sh
 
   df_echo "unset and clear"
   df_run_script 99_existance_report.sh
