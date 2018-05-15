@@ -15,9 +15,9 @@
 
   df_echo "download the environment scripts"
   mkdir -p ~/opt/.df
-  curl -o ~/opt/.df/dotfiles.tar.gz https://github.com/scozv/dotfiles/archive/feature/macOS.tar.gz
+  curl -o ~/opt/.df/dotfiles.tar.gz https://github.com/scozv/dotfiles/archive/feature/macOS.zip
   # https://apple.stackexchange.com/a/43119
-  /usr/bin/gunzip -c ~/opt/.df/dotfiles.tar.gz | /usr/bin/tar xf ~/opt/.df/
+  unzip ~/opt/.df/dotfiles.tar.gz -d ~/opt/.df/
 
   DF_OS_PATH="~/opt/.df/dotfiles-feature-macOS/os/src"
 
