@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# wget -qO- https://raw.githubusercontent.com/scozv/dotfiles/master/os/macOS.sh | bash
+# curl -o- https://raw.githubusercontent.com/scozv/dotfiles/feature/macOS/os/macOS.sh | bash
 
 {
   df_echo() {
@@ -15,7 +15,7 @@
 
   df_echo "download the environment scripts"
   mkdir -p ~/opt/.df
-  wget -O ~/opt/.df/dotfiles.tar.gz https://github.com/scozv/dotfiles/archive/feature/macOS.tar.gz
+  curl -o ~/opt/.df/dotfiles.tar.gz https://github.com/scozv/dotfiles/archive/feature/macOS.tar.gz
   tar -xf ~/opt/.df/dotfiles.tar.gz -C ~/opt/.df/
 
   DF_OS_PATH="~/opt/.df/dotfiles-master/os/src"
