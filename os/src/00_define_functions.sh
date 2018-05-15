@@ -20,7 +20,7 @@ df_exec_cmd() {
 }
 
 df_apt_exec() {
-  brew
+  brew $1
 }
 
 df_apt_install() {
